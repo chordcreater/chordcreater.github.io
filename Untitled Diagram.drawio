@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-12T14:09:30.427Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="xnrtM3CYaRtn0FULnIAr" version="21.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-12T14:12:56.194Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="gj4ba7yYOSutpz6vtZK3" version="21.3.8" type="github">
   <diagram id="FKmcwPwQnrE6T7yel-fw" name="第 1 页">
     <mxGraphModel dx="1050" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,6 +7,9 @@
         <mxCell id="yDmB5IPuwrGlUXSqtowo-2" value="后台应用启动获取脱敏服务配置并缓存" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170" y="90" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="yDmB5IPuwrGlUXSqtowo-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yDmB5IPuwrGlUXSqtowo-3" target="yDmB5IPuwrGlUXSqtowo-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="yDmB5IPuwrGlUXSqtowo-3" value="终端请求后台应用接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170" y="190" width="120" height="60" as="geometry" />
         </mxCell>
@@ -14,7 +17,7 @@
           <mxGeometry x="170" y="280" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="yDmB5IPuwrGlUXSqtowo-5" value="脱敏埋点拦截输出数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="170" y="370" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="yDmB5IPuwrGlUXSqtowo-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="yDmB5IPuwrGlUXSqtowo-2" target="yDmB5IPuwrGlUXSqtowo-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -22,11 +25,35 @@
             <mxPoint x="440" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yDmB5IPuwrGlUXSqtowo-7" value="规则处理器根据配置规则对数据进行脱敏处理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="450" width="120" height="60" as="geometry" />
+        <mxCell id="yDmB5IPuwrGlUXSqtowo-7" value="根据配置规则调用不同的规则处理器对数据进行脱敏处理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="470" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="yDmB5IPuwrGlUXSqtowo-8" value="脱敏后的数据输出&lt;br&gt;给终端" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="530" width="120" height="60" as="geometry" />
+          <mxGeometry x="170" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yDmB5IPuwrGlUXSqtowo-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="229.5" y="240" as="sourcePoint" />
+            <mxPoint x="229.5" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yDmB5IPuwrGlUXSqtowo-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="yDmB5IPuwrGlUXSqtowo-4" target="yDmB5IPuwrGlUXSqtowo-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="239.5" y="250" as="sourcePoint" />
+            <mxPoint x="370" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yDmB5IPuwrGlUXSqtowo-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="yDmB5IPuwrGlUXSqtowo-5" target="yDmB5IPuwrGlUXSqtowo-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="450" as="sourcePoint" />
+            <mxPoint x="240" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yDmB5IPuwrGlUXSqtowo-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="yDmB5IPuwrGlUXSqtowo-7" target="yDmB5IPuwrGlUXSqtowo-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="440" as="sourcePoint" />
+            <mxPoint x="240" y="480" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
