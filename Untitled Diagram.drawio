@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-12T13:58:09.765Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="l9_7obOcbArZY8RrjTur" version="21.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-12T14:09:30.427Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="xnrtM3CYaRtn0FULnIAr" version="21.3.8" type="github">
   <diagram id="FKmcwPwQnrE6T7yel-fw" name="第 1 页">
     <mxGraphModel dx="1050" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,7 +13,7 @@
         <mxCell id="yDmB5IPuwrGlUXSqtowo-4" value="后台应用处理后响应数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170" y="280" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="yDmB5IPuwrGlUXSqtowo-5" value="脱敏埋点拦截输出数据并根据接口配置规则调用处理器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="yDmB5IPuwrGlUXSqtowo-5" value="脱敏埋点拦截输出数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170" y="360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="yDmB5IPuwrGlUXSqtowo-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="yDmB5IPuwrGlUXSqtowo-2" target="yDmB5IPuwrGlUXSqtowo-3">
