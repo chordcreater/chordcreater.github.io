@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-17T10:58:44.835Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="0YxrV2_4mzn0l8z5EINN" version="21.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-17T11:03:11.885Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="3YimdkxpJkU46AFqe81k" version="21.3.8" type="github">
   <diagram id="FKmcwPwQnrE6T7yel-fw" name="第 1 页">
     <mxGraphModel dx="1573" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -109,23 +109,23 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-144" value="隐私脱敏服务中心" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
-          <mxGeometry x="260" y="1680" width="120" height="60" as="geometry" />
+          <mxGeometry x="322.1" y="1470" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-145" value="业务系统1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
-          <mxGeometry x="110" y="1800" width="120" height="60" as="geometry" />
+          <mxGeometry x="172.1" y="1590" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-146" value="业务系统2" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
-          <mxGeometry x="260" y="1800" width="120" height="60" as="geometry" />
+          <mxGeometry x="322.1" y="1590" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-148" value="业务系统n" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
-          <mxGeometry x="420" y="1800" width="120" height="60" as="geometry" />
+          <mxGeometry x="482.1" y="1590" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-149" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="97QTXu1RvYZzw_iWVVdc-144" target="97QTXu1RvYZzw_iWVVdc-145">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="135" y="1640" as="sourcePoint" />
-            <mxPoint x="229" y="1735" as="targetPoint" />
+            <mxPoint x="197.1" y="1430" as="sourcePoint" />
+            <mxPoint x="291.1" y="1525" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="170" y="1710" />
+              <mxPoint x="232.1" y="1500" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -136,8 +136,8 @@
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-151" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="97QTXu1RvYZzw_iWVVdc-144" target="97QTXu1RvYZzw_iWVVdc-146">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="280" y="1690" as="sourcePoint" />
-            <mxPoint x="119" y="1810" as="targetPoint" />
+            <mxPoint x="342.1" y="1480" as="sourcePoint" />
+            <mxPoint x="181.1" y="1600" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
@@ -148,10 +148,10 @@
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-155" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="97QTXu1RvYZzw_iWVVdc-144" target="97QTXu1RvYZzw_iWVVdc-148">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="1720" as="sourcePoint" />
-            <mxPoint x="420" y="1810" as="targetPoint" />
+            <mxPoint x="402.1" y="1510" as="sourcePoint" />
+            <mxPoint x="482.1" y="1600" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="480" y="1710" />
+              <mxPoint x="542.1" y="1500" />
             </Array>
           </mxGeometry>
         </mxCell>
