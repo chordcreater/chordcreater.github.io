@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-18T03:04:38.335Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="ngse7v4k-Lepod-c8Yse" version="21.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-18T07:03:33.562Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="FkzBJE8boYMXTpkNL6At" version="21.4.0" type="github">
   <diagram id="FKmcwPwQnrE6T7yel-fw" name="第 1 页">
     <mxGraphModel dx="980" dy="433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -14,7 +14,7 @@
           <mxGeometry x="290" y="2015" width="27.5" height="97.25" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-23" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="107.1" y="430" width="495" height="340" as="geometry" />
+          <mxGeometry x="107.1" y="430" width="442.9" height="340" as="geometry" />
         </mxCell>
         <mxCell id="yDmB5IPuwrGlUXSqtowo-2" value="客户端启动时连接脱敏服务获取配置&lt;br&gt;规则" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="178.5" y="151" width="120" height="60" as="geometry" />
@@ -24,23 +24,23 @@
             <mxPoint x="408.5" y="271" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="TZTw1tu3rmSJx_iXwC0C-15" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="yDmB5IPuwrGlUXSqtowo-3" target="yDmB5IPuwrGlUXSqtowo-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="yDmB5IPuwrGlUXSqtowo-3" value="客户端应用处理事件，在不同的业务场景下触发脱敏调度器拦截数据" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="178.5" y="245" width="120" height="60" as="geometry" />
+          <mxGeometry x="178.5" y="251" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="yDmB5IPuwrGlUXSqtowo-4" value="脱敏调度器根据服务脱敏规则调用规则处理器对数据进行脱敏处理" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="341.5" y="249" width="120" height="60" as="geometry" />
+        <mxCell id="yDmB5IPuwrGlUXSqtowo-4" value="脱敏调度器对应用配置的脱敏类型下的规则任务进行编排，然后调用编排后的任务处理器" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="341.5" y="249" width="120" height="71" as="geometry" />
         </mxCell>
-        <mxCell id="yDmB5IPuwrGlUXSqtowo-5" value="脱敏后的数据输出&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;给终端" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="339" y="160" width="120" height="60" as="geometry" />
+        <mxCell id="TZTw1tu3rmSJx_iXwC0C-24" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="yDmB5IPuwrGlUXSqtowo-5" target="TZTw1tu3rmSJx_iXwC0C-13">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yDmB5IPuwrGlUXSqtowo-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="yDmB5IPuwrGlUXSqtowo-3" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="238.5" y="311" as="sourcePoint" />
-            <mxPoint x="339.5" y="275" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="yDmB5IPuwrGlUXSqtowo-5" value="调用规则任务处理器对数据进行脱敏处理" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="339" y="155" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="131.1" y="634" width="446" height="120" as="geometry" />
+          <mxGeometry x="133.1" y="634" width="388.9" height="120" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-18" value="服务端组件" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="127.69999999999999" y="615" width="90" height="65" as="geometry" />
@@ -49,7 +49,7 @@
           <mxGeometry x="133.6" y="480" width="441" height="150" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="97QTXu1RvYZzw_iWVVdc-19" vertex="1">
-          <mxGeometry y="-10" width="441" height="150" as="geometry" />
+          <mxGeometry y="-10" width="390" height="150" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-15" value="客户端组件" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="97QTXu1RvYZzw_iWVVdc-19" vertex="1">
           <mxGeometry x="-9.671052631578947" y="-13.57" width="105.99473684210525" height="53.57142857142857" as="geometry" />
@@ -84,8 +84,8 @@
         <mxCell id="97QTXu1RvYZzw_iWVVdc-22" value="命名空间" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="371.5" y="665" width="72" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="97QTXu1RvYZzw_iWVVdc-24" value="隐私脱敏中心" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="100" y="430" width="109.6" height="50" as="geometry" />
+        <mxCell id="97QTXu1RvYZzw_iWVVdc-24" value="隐私脱敏应用架构" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="107.1" y="430" width="109.6" height="50" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-30" value="核心组件core" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="282" y="715" width="82.9" height="30" as="geometry" />
@@ -359,6 +359,9 @@
         </mxCell>
         <mxCell id="TZTw1tu3rmSJx_iXwC0C-11" value="jDataMaskClient" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="497.5" y="1590" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TZTw1tu3rmSJx_iXwC0C-13" value="脱敏后的数据输出&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;给" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="339" y="60" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
