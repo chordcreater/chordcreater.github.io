@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-19T05:38:14.973Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="_ZW5hWmvIu0wGyvOVcUS" version="21.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-19T05:58:54.442Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="CcJLVx99Yu4x8Dc-u71h" version="21.4.0" type="github">
   <diagram id="FKmcwPwQnrE6T7yel-fw" name="第 1 页">
     <mxGraphModel dx="1176" dy="502" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -271,7 +271,7 @@
           <mxGeometry x="112.7" y="985" width="527.3" height="145" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-210" value="脱敏类型：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-          <mxGeometry x="127.7" y="987.5" width="67.1" height="30" as="geometry" />
+          <mxGeometry x="123.7" y="987.5" width="67.1" height="30" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-211" value="服务名：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="124.1" y="945" width="60" height="30" as="geometry" />
@@ -280,7 +280,7 @@
           <mxGeometry x="177.1" y="950" width="67.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-213" value="接口" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
-          <mxGeometry x="193.5" y="992.5" width="66.5" height="25" as="geometry" />
+          <mxGeometry x="185.5" y="992.5" width="64.5" height="25" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-219" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
           <mxGeometry x="114.45" y="1149" width="525.55" height="96" as="geometry" />
@@ -298,7 +298,7 @@
           <mxGeometry x="282" y="1030" width="67.1" height="30" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-224" value="保留后4位" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
-          <mxGeometry x="500" y="1030" width="66.5" height="25" as="geometry" />
+          <mxGeometry x="500" y="1032" width="66.5" height="25" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-225" value="规则类型" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="114.09999999999995" y="1189" width="67.1" height="30" as="geometry" />
@@ -310,25 +310,25 @@
           <mxGeometry x="267.6" y="1193.25" width="73.9" height="30" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-229" value="字段名：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-          <mxGeometry x="111.39999999999998" y="1030" width="67.1" height="30" as="geometry" />
+          <mxGeometry x="118.39999999999998" y="1030" width="67.1" height="30" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-230" value="phoneNumber" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
-          <mxGeometry x="175.3" y="1031.25" width="86.5" height="27.5" as="geometry" />
+          <mxGeometry x="184.3" y="1031.25" width="86.5" height="27.5" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-231" value="手机号：/^(13[0-9]|14[01456879]|" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
           <mxGeometry x="341.5" y="1191.5" width="150" height="33.5" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-232" value="字段名：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-          <mxGeometry x="109.99999999999997" y="1077.5" width="67.1" height="30" as="geometry" />
+          <mxGeometry x="115.99999999999997" y="1077.5" width="67.1" height="30" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-233" value="userComment" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
-          <mxGeometry x="173.5" y="1080" width="86.5" height="27.5" as="geometry" />
+          <mxGeometry x="183.5" y="1080" width="86.5" height="27.5" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-234" value="规则类型：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="278.9" y="1080" width="67.1" height="30" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-235" value="敏感词" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
-          <mxGeometry x="349.1" y="1081.25" width="66.5" height="25" as="geometry" />
+          <mxGeometry x="349.1" y="1083.25" width="66.5" height="25" as="geometry" />
         </mxCell>
         <mxCell id="97QTXu1RvYZzw_iWVVdc-236" value="命名空间：pmx配置规则" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="94.8" y="910" width="140" height="30" as="geometry" />
@@ -364,7 +364,7 @@
           <mxGeometry x="428.75" y="1028.75" width="82" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TZTw1tu3rmSJx_iXwC0C-26" value="字段" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
-          <mxGeometry x="349.1" y="1028.75" width="66.5" height="25" as="geometry" />
+          <mxGeometry x="349.1" y="1032.75" width="66.5" height="25" as="geometry" />
         </mxCell>
         <mxCell id="TZTw1tu3rmSJx_iXwC0C-27" value="处理方式：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="428.75" y="1081.25" width="82" height="30" as="geometry" />
@@ -407,7 +407,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ZuzZAkbRLWh-O24dFWCV-8" value="/path/*" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
-          <mxGeometry x="280" y="992.5" width="66.5" height="25" as="geometry" />
+          <mxGeometry x="270" y="992.5" width="88.6" height="25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
