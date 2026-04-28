@@ -70,6 +70,9 @@
         <mxCell id="c-end" parent="app-layer-bg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=left;spacingLeft=8;" value="C端 - 消费者服务&#xa;ruoyi-endpoint-consumer&#xa;--------------------&#xa;商品浏览 | 购卡下单 | 订单查询&#xa;权益确认 | 退款申请 | 受益人管理" vertex="1">
           <mxGeometry height="130" width="260" x="350" y="45" as="geometry" />
         </mxCell>
+        <mxCell id="V_Ur-CRLJo-8YOUSrtoP-1" edge="1" parent="app-layer-bg" source="o-end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g-end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="o-end" parent="app-layer-bg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=left;spacingLeft=8;" value="O端 - 运营服务&#xa;ruoyi-endpoint-operator&#xa;--------------------&#xa;商户审核 | 资金调拨 | 投诉处理&#xa;纠纷调解 | 活动配置 | Banner管理&#xa;敏感词过滤 | 数据大屏 | FAQ" vertex="1">
           <mxGeometry height="130" width="270" x="640" y="45" as="geometry" />
         </mxCell>
@@ -78,6 +81,9 @@
         </mxCell>
         <mxCell id="f-end" parent="app-layer-bg" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=left;spacingLeft=8;" value="F端 - 金融服务&#xa;ruoyi-endpoint-finance&#xa;--------------------&#xa;对账管理 | 资金清算 | 财务报表" vertex="1">
           <mxGeometry height="130" width="230" x="1220" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="V_Ur-CRLJo-8YOUSrtoP-2" edge="1" parent="app-layer-bg" source="g-end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.039;entryY=0.979;entryDx=0;entryDy=0;entryPerimeter=0;" target="f-end">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge-nginx-b" edge="1" parent="1" source="nginx" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333;" target="b-end">
           <mxGeometry relative="1" as="geometry" />
@@ -113,13 +119,23 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge-c-mq" edge="1" parent="1" source="c-end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6A1B9A;strokeWidth=1;dashed=1;" target="rabbitmq">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="530" />
+              <mxPoint x="1050" y="530" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="edge-o-job" edge="1" parent="1" source="o-end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6A1B9A;strokeWidth=1;dashed=1;" target="snailjob">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge-f-bank" edge="1" parent="1" source="f-end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6A1B9A;strokeWidth=1;dashed=1;" target="bank-module">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1375" y="520" />
+              <mxPoint x="250" y="520" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="data-layer-bg" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontStyle=1;fontSize=14;startSize=30;" value="数据层 Data Layer" vertex="1">
           <mxGeometry height="130" width="1520" x="40" y="710" as="geometry" />
@@ -176,7 +192,12 @@
           <mxGeometry height="50" width="180" x="780" y="40" as="geometry" />
         </mxCell>
         <mxCell id="edge-monitor-b" edge="1" parent="1" source="b-end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00695C;strokeWidth=1;dashed=1;" target="monitor">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="520" />
+              <mxPoint x="910" y="520" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
