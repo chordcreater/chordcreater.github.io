@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net" modified="2026-04-28T00:00:00.000Z" agent="draw.io" version="24.7.5">
+  <diagram name="预付卡监管平台架构图" id="architecture">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="预付卡监管平台 — 系统架构图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="550" y="20" width="500" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== 客户端层 ==================== -->
+        <mxCell id="client-layer-bg" value="客户端层 Client Layer" style="swimlane;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontStyle=1;fontSize=14;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="1520" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="web-admin" value="Web 管理后台" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;fontSize=12;" vertex="1" parent="client-layer-bg">
+          <mxGeometry x="80" y="45" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="mini-app" value="微信小程序&#xa;消费者端" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;fontSize=12;" vertex="1" parent="client-layer-bg">
+          <mxGeometry x="280" y="45" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="mobile-merchant" value="商户端 APP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;fontSize=12;" vertex="1" parent="client-layer-bg">
+          <mxGeometry x="480" y="45" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="mobile-consumer" value="消费者 APP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;fontSize=12;" vertex="1" parent="client-layer-bg">
+          <mxGeometry x="680" y="45" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="gov-portal" value="政府监管门户" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;fontSize=12;" vertex="1" parent="client-layer-bg">
+          <mxGeometry x="880" y="45" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== 接入层 ==================== -->
+        <mxCell id="access-layer-bg" value="接入层 Access Layer" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontStyle=1;fontSize=14;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="1520" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="nginx" value="Nginx 负载均衡&#xa;反向代理 / SSL 终止" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#E65100;fontSize=12;" vertex="1" parent="access-layer-bg">
+          <mxGeometry x="570" y="35" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 客户端到 Nginx 箭头 -->
+        <mxCell id="arrow-web-nginx" value="" style="endArrow=classic;html=1;strokeColor=#333;strokeWidth=1;" edge="1" parent="1" source="web-admin" target="nginx">
+          <mxGeometry x="0.2" y="0" relative="1" as="geometry">
+            <mxPoint x="220" y="270" as="sourcePoint"/>
+            <mxPoint x="660" y="270" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== 应用服务层（五端） ==================== -->
+        <mxCell id="app-layer-bg" value="应用服务层 Application Layer (五端分离)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontStyle=1;fontSize=14;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="40" y="340" width="1520" height="200" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b-end" value="B端 - 商户服务&#xa;ruoyi-endpoint-business :8902&#xa;───────────────&#xa;预付卡管理｜订单管理&#xa;合同更新｜支付补录｜争议处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="app-layer-bg">
+          <mxGeometry x="60" y="45" width="240" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c-end" value="C端 - 消费者服务&#xa;ruoyi-endpoint-consumer&#xa;───────────────&#xa;商品浏览｜购卡下单&#xa;订单查询｜权益确认&#xa;退款申请｜受益人管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="app-layer-bg">
+          <mxGeometry x="340" y="45" width="240" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="o-end" value="O端 - 运营服务&#xa;ruoyi-endpoint-operator&#xa;───────────────&#xa;商户审核｜资金调拨｜投诉处理&#xa;纠纷调解｜活动配置｜Banner管理&#xa;敏感词｜数据大屏｜FAQ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="app-layer-bg">
+          <mxGeometry x="620" y="45" width="250" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="g-end" value="G端 - 监管服务&#xa;ruoyi-endpoint-gov&#xa;───────────────&#xa;资金监管｜合规检查&#xa;数据上报｜风险预警｜监管报表" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="app-layer-bg">
+          <mxGeometry x="910" y="45" width="240" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="f-end" value="F端 - 金融服务&#xa;ruoyi-endpoint-finance&#xa;───────────────&#xa;对账管理｜资金清算｜财务报表" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="app-layer-bg">
+          <mxGeometry x="1190" y="45" width="230" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- Nginx 到各端箭头 -->
+        <mxCell id="arrow-nginx-b" value="" style="endArrow=classic;html=1;strokeColor=#333;strokeWidth=1;" edge="1" parent="1" source="nginx" target="b-end">
+          <mxGeometry x="0.2" y="0" relative="1" as="geometry">
+            <mxPoint x="660" y="370" as="sourcePoint"/>
+            <mxPoint x="180" y="420" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== 业务能力层 ==================== -->
+        <mxCell id="business-layer-bg" value="业务能力层 Business Capability Layer" style="swimlane;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontStyle=1;fontSize=14;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="1520" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="bank-module" value="银行对接模块（策略+工厂）&#xa;工行｜邮储｜华夏｜银联｜中行" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#6A1B9A;fontSize=11;" vertex="1" parent="business-layer-bg">
+          <mxGeometry x="60" y="45" width="280" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="workflow" value="Flowable&#xa;工作流引擎" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#6A1B9A;fontSize=11;" vertex="1" parent="business-layer-bg">
+          <mxGeometry x="400" y="45" width="160" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="job" value="SnailJob&#xa;分布式任务调度" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#6A1B9A;fontSize=11;" vertex="1" parent="business-layer-bg">
+          <mxGeometry x="620" y="45" width="160" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="mq" value="RabbitMQ&#xa;补录｜退款队列" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#6A1B9A;fontSize=11;" vertex="1" parent="business-layer-bg">
+          <mxGeometry x="840" y="45" width="160" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- 各端到业务能力层箭头 -->
+        <mxCell id="arrow-b-bank" value="" style="endArrow=classic;html=1;strokeColor=#6A1B9A;strokeWidth=1;dashed=1;" edge="1" parent="1" source="b-end" target="bank-module">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== 数据层 ==================== -->
+        <mxCell id="data-layer-bg" value="数据层 Data Layer" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontStyle=1;fontSize=14;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="40" y="720" width="1520" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="mysql" value="MySQL 主从集群&#xa;预付卡｜订单｜交易｜账户" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#CFD8DC;strokeColor=#455A64;fontSize=11;size=15;" vertex="1" parent="data-layer-bg">
+          <mxGeometry x="100" y="40" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="redis" value="Redis 集群&#xa;会话｜缓存｜分布式锁" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#CFD8DC;strokeColor=#455A64;fontSize=11;size=15;" vertex="1" parent="data-layer-bg">
+          <mxGeometry x="360" y="40" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="
